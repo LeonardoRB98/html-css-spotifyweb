@@ -1,93 +1,92 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Spotify</title>
-  </head>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Spotify</title>
+</head>
   <body>
-    <div id="wrapper">
+    <div class="wrapper">
+      <!-- nav -->
+      <div id="nav">
+        <!-- sezione logo spotify -->
+        <div id="logo_container">
+            <img src="img/logo.svg" alt="">
+        </div>
+        <!-- /sezione logo spotify -->
 
-      <!-- left side -->
-      <main>
-        <section id="nav">
-          <div class="logo_container">
-            <!-- <img src="img/spotify-logo.png" alt="spotify logo"> -->
-          </div>
-          <!-- top section nav -->
-          <ul class="unstyled_ul">
-            <li>
-              <a  href="#">
-                <i class="fas fa-home"></i>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-search"></i>
-                cerca
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-record-vinyl"></i>
-                la tua libreria
-              </a>
-            </li>
-          </ul>
-          <!-- /top section nav -->
-
-          <!-- middle section nav-->
-            <h3>Playlist</h3>
-            <ul class="unstyled_ul playlist">
-              <li>
-                <a href="#">
-                  <i class="fas fa-plus-square"></i>
-                  Crea Playlist
-                </a>
-              </li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
+        <!-- sezione menu -->
+          <div id="menu">
+            <ul class="unstyled_ul">
+              <li><i class="fas fa-home"></i><a href="#">Home</a></li>
+              <li><i class="fas fa-search"></i><a href="#">Cerca</a></li>
+              <li><i class="fas fa-record-vinyl"></i><a href="#">La tua libreria</a></li>
             </ul>
-          <!-- /middle section nav -->
+          </div>
+        <!-- /sezione menu -->
 
-          <!-- bottom section nav -->
+        <!-- playlists -->
+          <div id="playlists">
+            <h3>Playlists</h3>
+            <a href="#"><i class="fas fa-plus-square"></i>Crea playlist</a>
+            <ul class="unstyled_ul">
+              <li><a href="#"></a>Nome playlist</li>
+              <li><a href="#"></a>Nome playlist</li>
+              <li><a href="#"></a>Nome playlist</li>
+              <li><a href="#"></a>Nome playlist</li>
+              <li><a href="#"></a>Nome playlist</li>
+              <li><a href="#"></a>Nome playlist</li>
+              <li><a href="#"></a>Nome playlist</li>
+            </ul>
+          </div>
+        <!-- /playlists -->
+
+        <!-- profile area -->
           <div id="profile">
-            <span>
-              <a href="#"><i class="fas fa-arrow-circle-down"></i>
-              Installa app
-            </a>
-            </span>
-            <hr>
+            <div class="profile_top">
+              <i class="fas fa-arrow-circle-down"></i>
+              <a href="#">installa ap</a>
+            </div>
+            <div class="profile_bottom">
+              <i class="fas fa-user-circle"></i>
+              <a href="#">Jhon Doe</a>
+            </div>
           </div>
-          <!-- /bottom section nav -->
-        </section>
-        <!-- /left side -->
+        <!-- /profile area -->
+      </div>
+      <!-- /nav -->
 
-        <!-- main -->
-        <section id="main_section">
+      <!-- main -->
+        <div id="main">
           <div id="header">
-
+            <a href="#"class="btn">Effettua l'upgrade</a>
           </div>
-        </section>
-        <!-- /main -->
-      </main>
+          <div id="album_nav">
+            <ul class="unstyled_ul">
+              <li><a href="#">in evidenza</a></li>
+              <li><a href="#">podcast</a></li>
+              <li><a href="#">classifiche</a></li>
+              <li><a href="#">generi e mood</a></li>
+              <li><a href="#">nuove uscite</a></li>
+              <li><a href="#">scopri</a></li>
+            </ul>
+          </div>
 
-      <!-- footer -->
-      <footer>
+        </div>
+        <!-- footer -->
+        <footer>
 
-      </footer>
-      <!-- /footer -->
+        </footer>
+        <!-- footer -->
+      </div>
+      <!-- /main -->
 
-    </div>
+
+
+
+
   </body>
 </html>
