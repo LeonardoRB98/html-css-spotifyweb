@@ -103,6 +103,7 @@ a {
   padding: 110px 20px 20px;
   background-color: #141922;
   float: left;
+  position: relative;
   overflow-y: scroll;
   display: flex;
   flex-direction: row;
@@ -150,10 +151,47 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-
 }
+
+/* media qwery */
 @media screen and (max-height: 610px) {
   #playlists ul {
     height: 40%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  #nav {
+    text-align: center;
+    width: 60px;
+  }
+
+  #logo_container {
+    width: 100%;
+    height: 50px;
+  }
+  #logo_container .xl {
+    display: none;
+  }
+  #logo_container .xs {
+    width: 100%;
+  }
+  #menu {
+    padding: 5px;
+  }
+  #menu ul a{
+    display: none;
+  }
+
+  #playlists {
+    display: none;
+  }
+
+  #profile {
+    padding: 5px;
+  }
+  #profile a {
+    display: none;
   }
 }
