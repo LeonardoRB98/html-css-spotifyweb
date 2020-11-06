@@ -2,10 +2,22 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 18px;
+  font-size: 14px;
 }
 a {
   text-decoration: none;
+  color: #666666;
+}
+h2 {
+  font-size: 22px;
+  color: #ffffff;
+}
+h3 {
+  font-size: 20px;
+  color: #ffffff;
+}
+h4 {
+  font-size: 12px;
   color: #666666;
 }
 
@@ -117,20 +129,54 @@ a {
   justify-content: flex-end;
   align-items: center;
 }
+
+/* abum nav */
 #album_nav {
   width: 100%;
-  text-align: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#album_nav ul {
+  justify-content: center;
 }
 #album_nav li {
   text-transform: uppercase;
   margin: 15px;
   display: inline-block;
 }
-#main .album {
-  width: 150px;
-  height: 150px;
-  background-color: red;
+#album_nav a {
+  font-size: 14px;
 }
+
+/* cover */
+.cover_list {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cover {
+  width: calc(100% / 6);
+  padding: 10px 10px;
+  text-align: center;
+}
+.covers > h2 {
+  padding-left: 10px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+.cover img {
+  width: 100%;
+}
+
+/* creato per John Doe */
+#creato_per_jhon > h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
 .btn {
   padding: 10px 30px;
   border: 1px solid #ffffff;
@@ -159,6 +205,12 @@ footer {
 }
 
 /* width media qwery */
+@media screen and (min-width: 769px) {
+  #logo_container .xs {
+    display: none;
+  }
+}
+
 /* xs media qwry */
 @media screen and (max-width: 768px) {
   #nav {
@@ -232,8 +284,19 @@ footer {
   }
 
 }
-@media screen and (min-width: 769px) {
-  #logo_container .xs {
-    display: none;
+
+/* md media qwery */
+@media screen and (max-width: 992px) {
+  .cover {
+    width: calc(100% / 4);
   }
+
+}
+
+/* s media qwery */
+@media screen and (max-width: 768px) {
+  .cover {
+    width: calc(100% / 2);
+  }
+
 }
