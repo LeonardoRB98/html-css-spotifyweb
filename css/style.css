@@ -80,13 +80,17 @@ h4 {
   color: #ffffff;
   margin-bottom: 10px;
 }
-#playlists i {
+.crea_playlist {
+  height: 40px;
   line-height: 40px;
+}
+#playlists i.fas.fa-plus-square {
+  vertical-align: middle;
   font-size: 40px;
 }
 #playlists ul {
   height: 60%;
-  margin-top: 20px;
+  margin-top: 10px;
   overflow-y: scroll;
 }
 #playlists li {
@@ -139,6 +143,8 @@ h4 {
   flex-wrap: wrap;
 }
 #album_nav ul {
+  flex-wrap: wrap;
+  display: flex;
   justify-content: center;
 }
 #album_nav li {
@@ -172,8 +178,15 @@ h4 {
 
 /* creato per John Doe */
 #creato_per_jhon > h3 {
-  margin-top: 10px;
   margin-bottom: 10px;
+}
+
+/* artisti_popolari */
+#artisti_popolari > h3 {
+  margin-bottom: 10px;
+}
+#artisti_popolari .cover > img {
+  border-radius: 50%;
 }
 
 
@@ -190,11 +203,117 @@ h4 {
 footer {
   width: 100%;
   height: 90px;
+  color: #ffffff;
   background-color: #282828;
   position: fixed;
   bottom: 0;
   left: 0;
+  display: flex;
+  justify-content: space-between;
 }
+.side_footer {
+  width: 250px;
+  height: 100%;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+}
+.side_footer h5 {
+  color: white;
+}
+.side_footer h6 {
+  color: #666666;
+}
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  background-image: url('../img/sinister.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+.thumbnail img {
+  width: 100%;
+
+  /* height: 100%; */
+}
+.song_title {
+  width:40%;
+  height: 50px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pref_archive_icon {
+  padding: 10px;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+.pref_archive_icon i {
+  padding: 2px 10px;
+  color: #797979;
+}
+footer i {
+  color: #f0f3f4;
+  padding: 10px;
+}
+.bar {
+  width: 70%;;
+  min-width: 55px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #797979;
+}
+.bar_indicator {
+  width: 40%;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #f0f3f4;
+}
+#media_control {
+  width: 40%;
+  height: 100%;
+}
+#media_control_top {
+  height: 40%;
+  padding-top: 10px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#media_control_top i {
+  font-size: 16px;
+}
+#media_control_top i.far.fa-play-circle {
+  font-size: 30px;
+  padding: 0 15px;
+}
+#media_control_bot {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time_indicator {
+  font-size: 10px;
+  padding: 0 15px;
+}
+.side_footer:last-of-type {
+  padding-right: 10px;
+}
+.side_footer i.fas.fa-volume-up {
+  padding-right: 10px;
+}
+
+
+
+
+
+
+
+
 
 /* media qwery */
 /* height media qwery */
@@ -209,6 +328,55 @@ footer {
   #logo_container .xs {
     display: none;
   }
+}
+
+
+/* md media qwery */
+@media screen and (max-width: 992px) {
+  .cover {
+    width: calc(100% / 4);
+  }
+  /* footer */
+  #media_control_top i {
+    font-size: 12px;
+  }
+  #media_control_top i.far.fa-play-circle {
+    font-size: 24px;
+    padding: 0 10px;
+  }
+}
+
+/* s media qwery */
+@media screen and (max-width: 768px) {
+  /* main */
+  .cover {
+    width: calc(100% / 2);
+  }
+  /* footer */
+  footer h5 {
+    font-size: 12px;
+  }
+  footer h6 {
+    font-size: 10px;
+  }
+  footer .side_footer {
+    width: 150px;
+  }
+  .side_footer .thumbnail{
+    width: 40px;
+    height: 40px;
+  }
+  footer .side_footer:first-of-type {
+    width: 130px;
+  }
+  .pref_archive_icon {
+    flex-direction: column;
+  }
+  .side_footer:last-of-type i {
+    font-size: 12px;
+    padding: 2px;
+  }
+
 }
 
 /* xs media qwry */
@@ -281,22 +449,6 @@ footer {
   /* header */
   #header {
     width: calc(100% - 60px);
-  }
-
-}
-
-/* md media qwery */
-@media screen and (max-width: 992px) {
-  .cover {
-    width: calc(100% / 4);
-  }
-
-}
-
-/* s media qwery */
-@media screen and (max-width: 768px) {
-  .cover {
-    width: calc(100% / 2);
   }
 
 }
