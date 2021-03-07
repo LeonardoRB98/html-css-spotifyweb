@@ -199,6 +199,9 @@ h4 {
   text-align: center;
   position: relative;
 }
+.cover:hover .layover {
+  display: flex;
+}
 .covers > h2 {
   padding-left: 10px;
   margin-bottom: 15px;
@@ -218,7 +221,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* display: none; */
+  display: none;
 }
 .layover:hover  {
   cursor: pointer;
@@ -267,6 +270,9 @@ footer {
   left: 0;
   display: flex;
   justify-content: space-between;
+}
+footer i {
+  cursor: pointer;
 }
 .side_footer {
   width: 250px;
@@ -345,6 +351,7 @@ footer i {
   width: 40%;
   height: 100%;
 }
+
 #media_control_top {
   height: 40%;
   padding-top: 10px;
